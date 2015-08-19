@@ -17,7 +17,7 @@ module.exports = {
 
     __doAfterRenderQueue: function() {
         if (this.__afterRender) {
-            this.__afterRender.forEach( cb => cb() );
+            this.__afterRender.forEach( function(cb) { cb(); } );
             this.__afterRender = [];
         }
     },
@@ -27,7 +27,7 @@ module.exports = {
     },
 
     do: function(todo) {
-        var p = new Promise((resolve, reject) => {
+        var p = new Promise(function(resolve, reject) {
             this.__queueForRender(resolve);
 
             todo();

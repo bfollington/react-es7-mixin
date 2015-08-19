@@ -1,7 +1,7 @@
 {
   "name": "react-es7-mixin",
   "description": "Add ES7 @annotation style mixins to React components, or any other ES6 class.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Ben Follington",
   "contributors": [],
   "license": "MIT",
