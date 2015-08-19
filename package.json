@@ -1,0 +1,28 @@
+{
+  "name": "react-es7-mixin",
+  "description": "Add ES7 @annotation style mixins to React components, or any other ES6 class.",
+  "version": "1.0.0",
+  "author": "Ben Follington",
+  "contributors": [],
+  "license": "MIT",
+  "repository": "bfollington/gulp-build-tools",
+  "homepage": "https://github.com/bfollington/gulp-build-tools",
+  "keywords": [
+    "react",
+    "es7",
+    "mixin"
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "files": [
+    "index.js",
+    "apply.js",
+    "afterRender.js",
+    "element.js"
+  ],
+  "peerDependencies": {
+    "jquery": "^2.1.4",
+    "react": "^0.13.3"
+  }
+}
