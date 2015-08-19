@@ -1,4 +1,4 @@
-var mergeMethods = require("mixins/util/mergeMethods");
+var mergeMethods = require("./util/mergeMethods");
 
 module.exports = function apply(mixin) {
     return function decorator(target) {
