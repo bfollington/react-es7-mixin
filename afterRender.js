@@ -27,8 +27,9 @@ module.exports = {
     },
 
     do: function(todo) {
+        var _this = this;
         var p = new Promise(function(resolve, reject) {
-            this.__queueForRender(resolve);
+            _this.__queueForRender(resolve);
 
             todo();
         });
