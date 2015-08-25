@@ -26,7 +26,7 @@ module.exports = {
         this.__doAfterRenderQueue();
     },
 
-    do: function(todo) {
+    "perform": function(todo) {
         var _this = this;
         var p = new Promise(function(resolve, reject) {
             _this.__queueForRender(resolve);
@@ -38,6 +38,6 @@ module.exports = {
     },
 
     setStateAnd: function(state) {
-        return this.do(this.setState.bind(this, state));
+        return this["perform"](this.setState.bind(this, state));
     }
 };
